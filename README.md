@@ -1,5 +1,5 @@
 # ITED-Br
-The Interfaces Twitter Elections Dataset: Data from the 2022 presidential elections in Brazil
+The Interfaces Twitter Elections Dataset: Data from the 2022 presidential elections in Brazil, as referenced in the related article published in the PLOS ONE journal https://journals.plos.org/plosone/), regarding it's construction and characteristics.
 
 # DOI
 https://zenodo.org/doi/10.5281/zenodo.13124678
