@@ -59,7 +59,7 @@ Similar to Hydrator, but uses a command line interface. [GitHub repository](http
 
 ## Structure
 
-The following tables detail some of the most important properties (which are organized into columns, in the data) in the structure of each type of object (hydrated) that were used by our team during our research. Since this dataset contains only the IDs of the objects, this is just to ilustrate the data that might be available through rehydration.
+The following tables detail some of the most important properties (which are organized into columns, in the data), present in the structure of each type of object (hydrated), that were used by our team during our research. Since this dataset contains only the IDs of the objects, this is just to ilustrate the data that might be available through rehydration.
 
 ### Tweets
 
