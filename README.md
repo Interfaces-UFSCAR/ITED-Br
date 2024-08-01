@@ -42,7 +42,7 @@ __Obs:__ This repository folder structure and/or file is for logical organizatio
 ## How to Hydrate
 
 ### What is Hydration?
-Hydration is the process of re-fetching the full data of tweets (and other objects such as users) from Twitter (X) using their IDs. This is necessary because, due to restrictions on data sharing in Twitter's terms of service, we can only freely share tweet IDs, not the full tweet data. To obtain the full data, users need to rehydrate the tweet IDs using the X API (previously Twitter API).
+Hydration is the process of re-fetching the full data of tweets (and other objects such as users) from Twitter (X) using their IDs. This is necessary because, due to restrictions on data sharing in Twitter's terms of service, we can only freely share IDs, not the full tweet data. To obtain the full data, users need to rehydrate the objects using the X API (previously Twitter API).
 
 It is possible to hydrate the data through any means that allow interaction with the API, which include, but are not restricted to: libraries for python or other programming languages, command line interfaces or apps with graphical user interface. We list some alternatives below, but they might not be the best option for your use case.
 
