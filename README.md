@@ -7,6 +7,11 @@ The Interfaces Twitter Elections Dataset (ITED-Br) encompasses data from the 202
 ### Data Collection
 The data was collected using the Twitter API, which provided academic/research access at the time. For the purposes of this repository, all the data except for the IDs representing the collected objects (such as tweets, users, media, replies, and quotes) was stripped, preserving the relationships between objects (e.g., tweets and their authors, retweets and their referenced tweets, etc.).
 
+### Measures of the dataset per search context
+The following table displays information regarding the data collection and resulting number of Tweets pertaining to each search context used to create the dataset, giving an idea about the volume of data under each category that can be found in this repository:
+
+![Dataset measures](https://github.com/Interfaces-UFSCAR/ITED-Br/blob/main/tables/measures.png)
+
 ### Data Organization
 The Tweet IDs are organized as follows:
 __1. Tweet ID files are stored in a folder tree expressed by this path:__
@@ -54,7 +59,7 @@ Similar to Hydrator, but uses a command line interface. [GitHub repository](http
 
 ## Structure
 
-The following tables detail the structure of each type of object that can be found contained in this dataset:
+The following tables detail some of the most important properties in the structure of each type of object (hydrated) that can be found contained in this dataset:
 
 ### Tweets
 
