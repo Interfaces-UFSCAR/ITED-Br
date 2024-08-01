@@ -1,64 +1,83 @@
 # ITED-Br
-The Interfaces Twitter Elections Dataset: Data from the 2022 presidential elections in Brazil, as referenced in the related article, regarding it's construction and characteristics.
 
-The repository contains a collection of tweets IDs extracted from Twitter (X) during the Brazilian presidential elections in 2022, encompassing the post-election period and the event of the attack on the buildings of the executive, legislative, and judiciary branches in January 2023. Our data collections has 282 million dehidrated tweets of Jun 20, 2023 to Jan 31, 2024. Furthermore, our dataset have over 280 millions of accounts IDs and over 30 millions media IDs
+The Interfaces Twitter Elections Dataset (ITED-Br) encompasses data from the 2022 Brazilian presidential elections, as detailed in the related article discussing its construction and characteristics. The repository includes tweet IDs collected from Twitter (X) during the election period, the post-election phase, and the attack on the executive, legislative, and judiciary buildings in January 2023. Our dataset comprises 282 million dehydrated tweets, collected from June 20, 2023, to January 31, 2024. It includes over 280 million account IDs and more than 30 million media IDs.
 
-## Data Organization
-The Tweet-IDs are organized as follows:  
-  
-__1. Tweet-IDs files are stored in a folders tree expressed by this path:__
+## Data Collection and Organization
+
+### Data Collection
+The data was collected using the Twitter API, which provided academic access at the time. For the purposes of this repository, all the data except for the IDs representing the collected objects (such as tweets, users, media, replies, and quotes) was stripped, preserving the relationships between objects (e.g., tweets and their authors, retweets and their referenced tweets).
+
+### Data Organization
+The Tweet IDs are organized as follows:
+__1. Tweet ID files are stored in a folder tree expressed by this path:__
 ```
 data/query/year/month/day/type/
 ```
-* query: represents the name of search string used to obtain the data;*
-* year: year of collected data;
-* month: month of collected data;
-* day: day of collected data;
-* type: type of collected data*
+- `query`: represents the name of the search string used to obtain the data.*
+- `year`: year of collected data;
+- `month`: month of collected data;
+- `day`: day of collected data;
+- `type`: type of collected data*
+*Detailed in the Article
 
-> *More explained on the Article
-  
-__2.Inside each leaf folders have parquet files containing the IDs__  
-  
-__3.Each file have the following name struct__  
-
+__2. Each leaf folder has parquet files containing the IDs.__
+__3. Each file has the following name structure:__
 ```
-type-query-year-month-day.parquet 
+type-query-year-month-day.parquet
 ```
 or
 ```
-type-subtype-query-year-month-day.parquet 
+type-subtype-query-year-month-day.parquet
 ```
-  
-* type: type of collected data (tweets, users, media, replies, quotes)*
-* subtype: type of interaction collected*
-* query: represents the name of search string used to obtain the data;*
-* year: year of collected data;
-* month: month of collected data;
-* day: day of collected data;
+- `type`: type of collected data (tweets, users, media, replies, quotes)*
+- `subtype`: type of interaction collected*
+- `query`: represents the name of the search string used to obtain the data;*
+- `year`: year of collected data;
+- `month`: month of collected data;
+- `day`: day of collected data;
+*Detailed in the Article
 
-> *More explained on the Article
+__Obs:__ This repository folder structure and/or file is for logical organization of the data only, and may not represent the ideal structuring for your particular use case or application. Our team found that avoiding large file sizes resulted in increased ease when it came to implementing optmized methods for processing data at a large scale.
 
 ## How to Hydrate
 
-### Hydrating using [Hydrator](https://github.com/DocNow/hydrator) (GUI)
-Navigate to the [Hydrator github repository](https://github.com/DocNow/hydrator) and follow the instructions for installation in their README. As there are a lot of separate Tweet ID files in this repository, it might be advisable to first merge files from timeframes of interest into a larger file before hydrating the Tweets through the GUI. 
+### What is Hydration?
+Hydration is the process of re-fetching the full data of tweets (and other objects such as users) from Twitter (X) using their IDs. This is necessary because, due to restrictions on data sharing in Twitter's terms of service, we can only freely share tweet IDs, not the full tweet data. To obtain the full data, users need to rehydrate the tweet IDs using the X API (previously Twitter API).
+
+It is possible to hydrate the data through any means that allow interaction with the API, which include, but are not restricted to: libraries for python or other programming languages, command line interfaces or apps with graphical user interface. We list some alternatives below, but they might not be the best alternative for your use case.
+
+### Hydrating using Hydrating using [Hydrator](https://github.com/DocNow/hydrator) (GUI)
+Navigate to the [Hydrator GitHub repository](https://github.com/DocNow/hydrator) and follow the instructions provided in the README. Due to the large number of separate Tweet ID files in this repository, it is advisable to merge files from timeframes of interest into a larger file before hydrating the tweets through the GUI.
 
 ### Hydrating using [Twarc](https://github.com/DocNow/twarc) (CLI)
-Many thanks to Ed Summers ([edsu](https://github.com/edsu)) and Github user [SamSamhuns](https://github.com/SamSamhuns) for writing this script that uses [Twarc](https://github.com/DocNow/twarc) to hydrate all Tweet-IDs stored in their corresponding folders. 
+Similar to Hydrator, but uses a command line interface. [GitHub repository](https://github.com/DocNow/twarc)).
 
-## More information
-For more information about the dataset consider to read our article on 
+## Structure
 
-# DOI
-https://zenodo.org/doi/10.5281/zenodo.13124678
+The following tables (which can also be found in our article) details the structure of each type of object that can be found contained in this dataset:
 
-# Data Usage Agreement
-This dataset is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License (CC BY-NC-SA 4.0). By using this dataset, you agree to abide by the stipulations in the license, remain in compliance with Twitter’s Terms of Service, and cite the following manuscript:
-Iasulaitis, S.; Valejo, A.D; Greco, B.C; Perillo, V.G; Messias, G.H; Vicari, I. The Interfaces Twitter Elections Dataset: Construction process and characteristics of Big Social Data during the 2022 presidential elections in Brazil. PLOS ONE (2024). (DOI)
+### Tweets
 
+![Tweet properties](https://github.com/Interfaces-UFSCAR/ITED-Br/blob/main/tables/Tweets.png)
 
+### Users
 
+![User properties](https://github.com/Interfaces-UFSCAR/ITED-Br/blob/main/tables/Users.png)
 
+### Media
 
+![Tweet properties](https://github.com/Interfaces-UFSCAR/ITED-Br/blob/main/tables/Media.png)
 
+### Interactions (e.g. Quotes, Replies)
+
+![Tweet properties](https://github.com/Interfaces-UFSCAR/ITED-Br/blob/main/tables/Interactions.png)
+
+## More Information
+
+For more information about the dataset, please read our article:
+- DOI: (PUBLICATION DOI PLACEHOLDER)
+
+## Data Usage Agreement
+
+This dataset is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License (CC BY-NC-SA 4.0). By using this dataset, you agree to abide by the stipulations in the license, comply with Twitter’s Terms of Service, and cite the following manuscript: 
+- Iasulaitis, S.; Valejo, A.D; Greco, B.C; Perillo, V.G; Messias, G.H; Vicari, I. The Interfaces Twitter Elections Dataset: Construction Process and Characteristics of Big Social Data During the 2022 Presidential Elections in Brazil. PLOS ONE (2024). (PUBLICATION DOI PLACEHOLDER)
