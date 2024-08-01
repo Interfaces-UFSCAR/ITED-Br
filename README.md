@@ -54,7 +54,7 @@ Similar to Hydrator, but uses a command line interface. [GitHub repository](http
 
 ## Structure
 
-The following tables (which can also be found in our article) details the structure of each type of object that can be found contained in this dataset:
+The following tables (which can also be found in our article) detail the structure of each type of object that can be found contained in this dataset:
 
 ### Tweets
 
