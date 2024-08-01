@@ -37,7 +37,7 @@ type-subtype-query-year-month-day.parquet
 - `day`: day of collected data;
 *Detailed in the Article
 
-__Obs:__ This repository's folder structure is for logical organization of the data only, and may not represent the ideal structuring for your particular use case or application. Our team found that avoiding large file sizes resulted in increased ease when it came to implementing optmized methods for processing data at a large scale.
+__Obs:__ This repository's folder structure is for logical organization of the data only, and may not represent the ideal structuring for your particular use case or application. Also, our team found that avoiding large file sizes resulted in increased ease when it came to implementing optmized methods for processing data at a large scale.
 
 ## How to Hydrate
 
