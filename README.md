@@ -5,7 +5,7 @@ The Interfaces Twitter Elections Dataset (ITED-Br) encompasses data from the 202
 ## Data Collection and Organization
 
 ### Data Collection
-The data was collected using the Twitter API, which provided academic/research access at the time. For the purposes of this repository, all the data except for the IDs representing the collected objects (such as tweets, users, media, replies, and quotes) was stripped, preserving the relationships between objects (e.g., tweets and their authors, retweets and their referenced tweets).
+The data was collected using the Twitter API, which provided academic/research access at the time. For the purposes of this repository, all the data except for the IDs representing the collected objects (such as tweets, users, media, replies, and quotes) was stripped, preserving the relationships between objects (e.g., tweets and their authors, retweets and their referenced tweets, etc.).
 
 ### Data Organization
 The Tweet IDs are organized as follows:
