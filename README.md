@@ -77,6 +77,8 @@ The following tables detail some of the most important properties in the structu
 
 ![Tweet properties](https://github.com/Interfaces-UFSCAR/ITED-Br/blob/main/tables/Interactions.png)
 
+__Obs:__ Each object's available properties are defined and controlled by the X API (formerly Twitter API), and different properties could be available when you rehydrate the data. The properties being displayed here are those which were collected by our team during our construction of the hydrated dataset from which this ID-only dataset is derived.
+
 ## More Information
 
 For more information about the dataset, please read our article:
