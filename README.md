@@ -46,7 +46,7 @@ Hydration is the process of re-fetching the full data of tweets (and other objec
 
 It is possible to hydrate the data through any means that allow interaction with the API, which include, but are not restricted to: libraries for python or other programming languages, command line interfaces or apps with graphical user interface. We list some alternatives below, but they might not be the best option for your use case.
 
-### Hydrating using Hydrating using [Hydrator](https://github.com/DocNow/hydrator) (GUI)
+### Hydrating using [Hydrator](https://github.com/DocNow/hydrator) (GUI)
 Navigate to the [Hydrator GitHub repository](https://github.com/DocNow/hydrator) and follow the instructions provided in the README. Due to the large number of separate Tweet ID files in this repository, it is advisable to merge files from timeframes of interest into a larger file before hydrating the tweets through the GUI.
 
 ### Hydrating using [Twarc](https://github.com/DocNow/twarc) (CLI)
