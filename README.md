@@ -82,9 +82,9 @@ __Obs:__ Each object's available properties are defined and controlled by the X 
 ## More Information
 
 For more information about the dataset, please read our article:
-- DOI: (PUBLICATION DOI PLACEHOLDER)
+- DOI: http://dx.doi.org/10.1371/journal.pone.0316626
 
 ## Data Usage Agreement
 
 This dataset is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License (CC BY-NC-SA 4.0). By using this dataset, you agree to abide by the stipulations in the license, comply with Twitter’s Terms of Service, and cite the following manuscript: 
-- Iasulaitis, S.; Valejo, A.D; Greco, B.C; Perillo, V.G; Messias, G.H; Vicari, I. The Interfaces Twitter Elections Dataset: Construction Process and Characteristics of Big Social Data During the 2022 Presidential Elections in Brazil. PLOS ONE (2024). (PUBLICATION DOI PLACEHOLDER)
+- Iasulaitis, S.; Valejo, A.D; Greco, B.C; Perillo, V.G; Messias, G.H; Vicari, I. The Interfaces Twitter Elections Dataset: Construction Process and Characteristics of Big Social Data During the 2022 Presidential Elections in Brazil. PLOS ONE (2024). http://dx.doi.org/10.1371/journal.pone.0316626.
